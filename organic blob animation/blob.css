@@ -1,0 +1,77 @@
+@font-face {
+    font-family: MonReg;
+    src: url(/Monument\ Regular.otf);
+}
+
+body{
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    width: 400px;
+    height: 400px;
+    background: #b175ff;
+    border-radius: 60% 40% 30% 70% /  60% 30% 70% 40%;
+    animation: morph 4s ease-in-out infinite, scaleIn 2s cubic-bezier(1, .01, .23, 1);
+    transition: all 4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #b175ff, 0 0 20px #b175ff, 0 0 40px #b175ff;
+}
+
+.shape p{
+    font-family: MonReg;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% /  60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% /  50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% /  60% 30% 70% 40%;
+    }
+}
+
+@keyframes floating {
+    0% { 
+        transform: translate(0,  0px); 
+    }
+
+    50%  { 
+        transform: translate(0, 15px); 
+    }
+
+    100% { 
+        transform: translate(0, -0px); 
+    }   
+}
