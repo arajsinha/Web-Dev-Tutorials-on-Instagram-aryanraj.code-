@@ -12,3 +12,4 @@ Clone the Folder to get access to all projects that have been built till now.</i
 - Testing and Learning Basic HTML Tags
 
 <h3>Follow me on Instagram: <a href="https://www.instagram.com/aryanraj.code/?hl=en">@aryanraj.code</a></h3>
+<img src="https://res.cloudinary.com/dwkhm30wx/image/upload/v1661453860/Instagram/Untitled_design_6_r3v3vs.png"/>
